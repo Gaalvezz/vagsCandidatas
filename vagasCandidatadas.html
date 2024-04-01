@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="vagasCandidatadas.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
-    <nav>
+    <!-- <nav>
         <div class="nav-logo">
             <a href="#">
                 <h1 id="teste">WM</h1>
-                <!-- <img src="image/logo.png">  -->
+                <img src="image/logo.png">  
             </a>
         </div>
  
@@ -29,14 +30,14 @@
                 </li>
         </ul>
         <a href="/buscar/escolhas.html"><button class="btn">Buscar vaga</button></a>
-    </nav>
+    </nav> -->
 
     <div class="dividir"></div> <!--parte para separacao da (logo) dos (comentarios)  -->
 
     <div class="section">
-        <div class="container">
+        <div class="container" id="container">
 
-            <div class="vaga1">
+            <div class="vaga1" id="vaga1">
                 
             <div class="vaga">
                 <div class="empresa">
@@ -96,23 +97,49 @@
                     
                    <hr>
                     <div class="buttons">
-                        <button id="mybtn" class="desistir"><span>Desistir</span></button>
-    
-                      
+                        <button onclick="abrirModal()" class="desistir" id="action-btn"><span>Desistir</span></button>
                         
-    
                         <button class="candidatar"><span class="span-button">Candidatar</span></button>
+                        
+                     
+
                     </div>
+
+                    
+
+
+                    <div class="janela-modal" id="janela-modal">
+                        <div id="modal">
+                          
+                            <h1>Desistir da candidatura</h1>
+                            <p>Tem certeza que deseja desistir da vaga ?</p>
+                     
+                        <div class="modal-button">
+                            <button  class="modal-desistir" id="desistirr" type="button">Desistir</button>
+                            
+                            <button class="modal-cancelar" id="fechar" type="button">Cancelar</button>
+                        </div>
+                    
+                        </div>
+                    </div>
+                     
+
+
+                 
+                    
+                    
         
                 </div>
             </div> <!-- fecha a classe vaga -->
+            
     
         </div> <!--fecha a classe vaga1-->
+        
             
          </div>   <!-- fecha a classe container -->
-    
-    
-    
+
+         
+         
     
          <div class="container">
             <div class="vaga2">
@@ -175,20 +202,51 @@
                     
                    <hr>
                     <div class="buttons">
-                        <button class="desistir" ><span>Desistir</span></button>
+                        
+                        <button onclick="abrirModal()" class="desistir"><span>Desistir</span></button>
+                        
+                        
                         <button class="candidatar"><span class="span-button">Candidatar</span></button>
+
+                        
                     </div>
+
+                    <div class="janela-modal" id="janela-modal">
+                        <div id="modal">
+                            <div class="modal-header">
+                            <h1>Desistir da candidatura</h1>
+                            <p>Tem certeza que deseja desistir da vaga ?</p>
+                        </div>
+                        <div class="modal-button">
+                            <button class="modal-desistir" type="button">Desistir</button>
+                            
+                            <button class="modal-cancelar" type="button">Cancelar</button>
+                        </div>
+                    
+                        </div>
+                    </div>
+                 
+                    
+                    
+                    
+                    
+                    
         
                 </div>
+                
             </div> <!-- fecha a classe vaga -->
+            
     
         </div> <!--fecha a classe vaga2 -->
+        
     
             
          </div>   <!-- fecha a classe container -->
+         
     
          
          <div class="container">
+            
             <div class="vaga3">
         
             <div class="vaga">
@@ -249,8 +307,23 @@
                     
                    <hr>
                     <div class="buttons">
-                        <button class="desistir"><span>Desistir</span></button>
+                        <button onclick="abrirModal()" class="desistir"><span>Desistir</span></button>
                         <button class="candidatar"><span class="span-button">Candidatar</span></button>
+                    </div>
+
+                    <div class="janela-modal" id="janela-modal">
+                        <div id="modal">
+                            <div class="modal-header">
+                            <h1>Desistir da candidatura</h1>
+                            <p>Tem certeza que deseja desistir da vaga ?</p>
+                        </div>
+                        <div class="modal-button">
+                            <button class="modal-desistir" type="button">Desistir</button>
+                            
+                            <button class="modal-cancelar" type="button">Cancelar</button>
+                        </div>
+                    
+                        </div>
                     </div>
         
                 </div>
@@ -263,12 +336,13 @@
     
         </div>
       
-        <button  id="visibily">Ver Mais</button>
-
+        <button class="btnvermais" id="visibily" type="button">ver mais</button>
+        
 <section>
-
+    
     <div class="vermais">
-
+       
+        
         <div class="vaga4">
             
         <div class="vaga">
@@ -329,12 +403,23 @@
                 
                <hr>
                 <div class="buttons">
-                    <button id="mybtn" class="desistir"><span>Desistir</span></button>
-
-                  
-                    
-
+                    <button onclick="abrirModal()" class="desistir"><span>Desistir</span></button>
                     <button class="candidatar"><span class="span-button">Candidatar</span></button>
+                </div>
+
+                <div class="janela-modal" id="janela-modal">
+                    <div id="modal">
+                        <div class="modal-header">
+                        <h1>Desistir da candidatura</h1>
+                        <p>Tem certeza que deseja desistir da vaga ?</p>
+                    </div>
+                    <div class="modal-button">
+                        <button class="modal-desistir" type="button">Desistir</button>
+                        
+                        <button class="modal-cancelar" type="button">Cancelar</button>
+                    </div>
+                
+                    </div>
                 </div>
     
             </div>
@@ -408,8 +493,22 @@
                 
                <hr>
                 <div class="buttons">
-                    <button class="desistir" ><span>Desistir</span></button>
+                    <button onclick="abrirModal()" class="desistir"><span>Desistir</span></button>
                     <button class="candidatar"><span class="span-button">Candidatar</span></button>
+                </div>
+                <div class="janela-modal" id="janela-modal">
+                    <div id="modal">
+                        <div class="modal-header">
+                        <h1>Desistir da candidatura</h1>
+                        <p>Tem certeza que deseja desistir da vaga ?</p>
+                    </div>
+                    <div class="modal-button">
+                        <button class="modal-desistir" type="button">Desistir</button>
+                        
+                        <button class="modal-cancelar" type="button">Cancelar</button>
+                    </div>
+                
+                    </div>
                 </div>
     
             </div>
@@ -418,10 +517,10 @@
     </div> <!--fecha a classe vaga5 -->
 
         
-     </div>   <!-- fecha a classe container -->
+     </div>   <!-- fecha a classe vermais -->
 
      
-    
+    <div class="vermais">
         <div class="vaga6">
     
         <div class="vaga">
@@ -482,21 +581,38 @@
                 
                <hr>
                 <div class="buttons">
-                    <button class="desistir"><span>Desistir</span></button>
+                    <button onclick="abrirModal()" class="desistir"><span>Desistir</span></button>
                     <button class="candidatar"><span class="span-button">Candidatar</span></button>
+                </div>
+                <div class="janela-modal" id="janela-modal">
+                    <div id="modal">
+                        <div class="modal-header">
+                        <h1>Desistir da candidatura</h1>
+                        <p>Tem certeza que deseja desistir da vaga ?</p>
+                    </div>
+                    <div class="modal-button">
+                        <button class="modal-desistir" type="button">Desistir</button>
+                        
+                        <button class="modal-cancelar" type="button">Cancelar</button>
+                    </div>
+                
+                    </div>
                 </div>
     
             </div>
+            
         </div> <!-- fecha a classe vaga -->
 
     </div> <!--fecha a classe vaga6 -->
 
         
-     </div>   <!-- fecha a classe container -->
+     </div>   <!-- fecha a classe vermais -->
 
     </div>
     
 </section>
+
+
 
     
 
@@ -550,9 +666,9 @@
 
      
 
-     
 
-<script src="vagas.js"></script>
+
+
 
 
 </body>
